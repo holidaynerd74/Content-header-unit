@@ -1,0 +1,120 @@
+.contentHeaderUnit
+{
+	width:1100px;
+}
+
+.contentHeaderUnit header
+{
+	position: relative;
+	height: 570px;
+	overflow: hidden;
+}
+
+
+.headerImageContainer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.headerImage
+{
+	display: none;
+	z-index: 1;
+}
+
+.bottomHeaderContent
+{
+	
+	margin: 0px;
+	opacity: 0.8;
+	z-index: 2;
+	width:1100px;
+	text-align: center;
+	position: absolute; 
+	bottom: 0;
+}
+
+.headerTabs
+{
+	list-style: none;
+	margin: 13px;
+
+}
+
+.headerTabs > li
+{
+	display: inline;
+	padding: 15px;
+	cursor: pointer;
+	color:#ccc;
+	background-color: #000;
+	margin: 0 5px 0 5px;
+}
+
+.headerTabs > li:hover, ul li.selectedTab
+{
+	color:#000;
+	background-color: #ccc;
+}
+
+.headerContent
+{
+	color:#ccc;
+	background-color: #000;
+	height: 100%;
+}
+
+p.first
+{margin: 0px;padding: 15px;}
+
+.hiddenHeaderContent
+{
+	display: none;
+}
+
+.headerContentShowHideBtn
+{
+	float:right;
+	cursor: pointer;
+	margin: 0 10px 0 0;
+}
+
+.content, .content > div[data-tabId] 
+{
+	display: none;
+}
+
+div[data-tabId] > nav
+{
+	height:auto; width:auto; float:left; display: inline;
+}
+
+ul.innerNav li
+{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+ul.innerNav li:hover
+{
+	background-color: #ccc;
+	color:#fff;
+}
+
+.innerContent
+{
+	height:auto; width:700px; overflow:hidden; display: inline; float:left; margin: 0 0 0 15px;
+}
+
+.innerContent div.defaultInnerContent
+{
+	display:block;
+}
+
+div[data-innerContentId]
+{
+	display: none;
+}
